@@ -30,6 +30,30 @@ h1 {
   margin: 0;
 }
 
+a {
+  color: #00ccff;
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ccff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: transform 0.075s ease-in-out;
+}
+
+a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 .erik {
   background-image: linear-gradient(
     to right,
