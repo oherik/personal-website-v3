@@ -17,6 +17,18 @@ body {
   width: 33rem;
 }
 
+.logo {
+  fill: none;
+  stroke: #00ccff;
+  stroke-width: 12;
+}
+
+.logo:hover {
+  fill: none;
+  stroke: #00f8fc;
+  stroke-width: 10;
+}
+
 .heading {
   display: flex;
   flex-direction: column;
