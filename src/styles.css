@@ -9,28 +9,27 @@ body {
   margin: 0;
 }
 
-.content {
+.main-wrapper {
   display: grid;
-  grid-row-gap: 2.5rem;
-
+  place-items: center;
+  padding: 2rem;
   min-height: 100vh;
+  height: 100%;
   width: 100%;
-  margin: 0;
-  grid-template-columns: repeat(2, minmax(auto, 16rem));
-  place-content: center;
+  box-sizing: border-box;
 }
 
-.logos {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  grid-column: 1/-1;
+.content {
+  grid-row-gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 8rem));
+  place-content: center;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   cursor: pointer;
   transition: color 0.1s ease-in-out;
 }
@@ -55,6 +54,8 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   padding-right: 5rem;
+  grid-column: 1/3;
+  grid-row: 1;
   /* A bit of magic number negative margin to keep the text align with the image. */
   margin-bottom: -0.66rem;
 }
@@ -104,7 +105,11 @@ a {
 }
 
 .portrait {
+  grid-column: 3/-1;
+  grid-row: 1;
   object-fit: none;
+  width: 100%;
+  height: 304px;
 }
 
 .information-body {
@@ -112,4 +117,40 @@ a {
   margin: 0;
   line-height: 1.5em;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 860px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .heading {
+    padding-right: 1rem;
+  }
+  .portrait {
+    height: 260px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .main-wrapper {
+    padding: 1rem;
+  }
+  .portrait {
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .content {
+    grid-template-columns: repeat(2, minmax(auto, 8rem));
+    grid-row-gap: 1rem;
+  }
+  .heading {
+    grid-column: 1/-1;
+    padding: 0;
+    margin: 0;
+  }
 }
