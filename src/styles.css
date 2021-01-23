@@ -21,24 +21,33 @@ body {
 }
 
 .logos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   grid-column: 1/-1;
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-items: center;
-  align-items: flex-start;
 }
 
-.logo {
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+
+.contact__icon {
+  transition: stroke 0.1s ease-in-out;
   fill: none;
-  stroke: #00ccff;
+  stroke: currentColor;
   stroke-width: 12;
 }
 
-.logo:hover {
-  fill: none;
-  stroke: #00f8fc;
-  stroke-width: 10;
+.contact__label {
+  margin: 0.5em 0 0 0;
+}
+
+.contact:hover {
+  color: #00f8fc;
 }
 
 .heading {
@@ -60,7 +69,7 @@ a {
   text-decoration: none;
 }
 
-a::before {
+.information__link::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -73,7 +82,7 @@ a::before {
   transition: transform 0.075s ease-in-out;
 }
 
-a:hover::before {
+.information__link:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
