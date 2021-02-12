@@ -1,10 +1,10 @@
 # Erik's personal website, v3
 
-This is the third iteration of my personal website. The previous versions have lacked a clear purpose and I haven't spent too much time maintaining the last one, so it was time for a change.
+This is the third iteration of my personal website. The previous versions lacked a clear purpose and I haven't spent too much time maintaining the last one, so it was time for a change.
 
 ## Goal
 
-Create a really fast landing page for my personal website, and make it blazingly fast. It should be easy to understand code-wise, and come with as few dependencies as possible. It's a "back to the roots" website, more or less.
+Create a simple and stylish landing page for my personal website, and make it really fast. It should be easy to understand code-wise, and come with as few dependencies as possible. It's a "back to the roots" website, more or less.
 
 ## What this is
 
