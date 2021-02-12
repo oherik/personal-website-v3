@@ -1,6 +1,6 @@
 # Erik's personal website, v3
 
-This is the third iteration of my personal website. The previous versions lacked a clear purpose and I haven't spent too much time maintaining the last one, so it was time for a change.
+This is the third iteration of my personal website, [erikohrn.com](https://erikohrn.com/). The previous versions lacked a clear purpose and I haven't spent too much time maintaining the last one, so it was time for a change.
 
 ## Goal
 
